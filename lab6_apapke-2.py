@@ -2,8 +2,17 @@ shopping_cart = {
 
 }
 
+
 print(f"Welcome!")
 
-while input != "checkout":
-    item = input("What")
-    if item == "View" or "view"
+active = True
+while active:
+    item = input(f"What")
+    if (item == "checkout") or (item == "Checkout"):
+        active = False
+    elif (item == "View") or (item == "view"):
+        print(f"++YOUR CART++\n")
+    else:
+        quantity = input(f"How many?")
+        if item in shopping_cart:
+            print("")

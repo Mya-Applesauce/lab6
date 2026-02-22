@@ -1,7 +1,4 @@
-shopping_cart = {
-
-}
-
+shopping_cart = {}
 
 print(f"Welcome!")
 
@@ -14,5 +11,6 @@ while active:
         print(f"++YOUR CART++\n")
     else:
         quantity = input(f"How many?")
-        if item in shopping_cart:
-            print("")
+        if item not in shopping_cart:
+            shopping_cart[item] = quantity
+            print(f"{item} {shopping_cart[item]}")
